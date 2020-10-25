@@ -11,5 +11,5 @@
 
 ### Packages that were installed during exercises:
 
-	- npm install --save [radium](https://www.npmjs.com/package/radium)
-	- npm install --save [styled-components](https://www.npmjs.com/package/styled-components)
+- npm install --save [radium](https://www.npmjs.com/package/radium)
+- npm install --save [styled-components](https://www.npmjs.com/package/styled-components)
