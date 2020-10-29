@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Auxiliary from "../../../hoc/Auxiliary";
+import withClass from "../../../hoc/withClass";
 import calsses from "./Person.css";
-
 class Person extends Component {
   render() {
     console.log("[Person.js rendering...]");
@@ -21,4 +21,4 @@ class Person extends Component {
   }
 }
 
-export default Person;
+export default withClass(Person, calsses.Person);
