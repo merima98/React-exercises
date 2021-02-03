@@ -9,7 +9,6 @@ import AuthContext from "../context/auth-context";
 class App extends Component {
   constructor(props) {
     super(props);
-    console.log("[App.js] constructor");
   }
 
   state = {
@@ -26,20 +25,14 @@ class App extends Component {
   };
 
   static getDerivedStateFromProps(props, state) {
-    console.log("[App.js] getDerivedStateFromProps");
     return state;
   }
 
-  componentDidMount() {
-    console.log("[App.js] componentDidMount");
-  }
+  componentDidMount() {}
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("[App.js] shouldComponentUpdate");
     return true;
   }
-  componentDidUpdate() {
-    console.log("[App.js] componentDidUpdate");
-  }
+  componentDidUpdate() {}
 
   nameChangedHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex((p) => {
@@ -76,8 +69,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("[App.js] render");
-
     let persons = null;
 
     if (this.state.showPersons) {

@@ -6,23 +6,9 @@ const cockpit = (props) => {
   const toggleBtnRef = useRef(null);
   const authContext = useContext(AuthContext);
 
-  console.log(authContext.authenticated);
-
   useEffect(() => {
-    console.log("[Cockpit.js] useEffect");
-
     toggleBtnRef.current.click();
-    return () => {
-      console.log("[Cockpit.js] cleanup work in useEffect");
-    };
   }, []);
-
-  useEffect(() => {
-    console.log("[Cockpit.js] 2nd useEffect");
-    return () => {
-      console.log("[Cockpit.js] cleanup work in 2nd useEffect");
-    };
-  });
 
   const assignedClasses = [];
   let btnClass = "";
